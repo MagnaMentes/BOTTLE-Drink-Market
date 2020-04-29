@@ -1,0 +1,84 @@
+body {
+	font-family: 'DaysSans', 'DaysSansBold', 'DaysSansBlack', sans-serif;
+	padding: 0;
+    margin: 0;
+    background: #00A25A;
+}
+
+div, p, input, button, form, span, a, ul, li, img {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0px;
+}
+
+.content h1 {
+    font-family: 'DaysSansBlack';
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 155.4%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.content h1 .age {
+    color: #FBDC32;
+}
+
+.content h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130.4%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.buttons .yes {
+    margin-right: 43px;
+    width: 360px;
+}
+
+.buttons .yes .btny {
+    background: url(../img/Button_yes.png) no-repeat;
+    width: 400px;
+    height: 112px;
+    display: block;
+}
+
+.buttons .yes .kr {
+    position: relative;
+    left: -155px;
+    top: -75px;
+    transform: rotate(-34.5deg);
+}
+
+.buttons .no {
+    margin-left: 43px;
+}
+
+.buttons h3 {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 130.4%;
+    margin-top: 25px;;
+    color: #FFFFFF;
+}
+
