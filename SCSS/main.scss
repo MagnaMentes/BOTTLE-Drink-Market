@@ -1,0 +1,88 @@
+@import "fonts";
+@import "zero";
+
+body {
+    .wrapper {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        .header {
+            .Logo {
+                height: 140px;
+                background: url("../img/HeaderLogo.png") top center/430px 133px no-repeat;
+            }
+            .Menu {
+    
+            }
+            .Slider {
+    
+            }
+        }
+    
+        .content {
+            padding: 30px;
+            background-color: #fff;
+            .BOTTLE_PROMO {
+                width: 100%;
+                height: 880px;
+                background: url("../img/Vector4.png") left/1858px 880px no-repeat;
+                margin: 0 0 45px 0;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .promo-info {
+                    // border: 1px solid red;
+                    width: 645px;
+                    height: 645px;
+                    // margin: 0 0 0 216px;
+                    background: url("../img/Bottle_promo_logo.png") top left/402px no-repeat;
+                    p {
+                        font-size: 70px;
+                        font-weight: 400;
+                        font-family: "Days";
+                        line-height: 75px;
+                        color: #fff;
+                        margin: 140px 0 0 0;
+                        span {
+                            font-family: "DaysSansLight";
+                            font-weight: 100;
+                            color: #FBDC32;
+                        }
+                    }
+                }
+                .promo-anim {
+                    // border: 1px solid red;
+                    width: 405px;
+                    height: 842px;
+                    // margin: 0 216px 0 0;
+                    background: url("../img/kran.png") right center/405px 842px no-repeat;
+                }
+            }
+            .Partners {
+                font-size: 48px;
+                font-family: "Days";
+                color: #333739;
+                text-align: center;
+            }
+            .About {
+    
+            }
+            .Map {
+    
+            }
+        }
+    
+        .footer {
+            background-color: #c2b7f7;
+            .FooterMenu {
+    
+            }
+            .FooterLogo {
+    
+            }
+            .FooterCopyright {
+    
+            }
+        }
+    }
+}

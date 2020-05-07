@@ -1,71 +1,169 @@
+@charset "UTF-8";
 @font-face {
-    font-family: 'DaysSansLight';
-    src: url('../fonts/TTDaysSans-Light.eot');
-    src: local('../fonts/TTDaysSans-Light.eot'), url('../fonts/TTDaysSans-Light.woff') format('woff'), url('../fonts/TTDaysSans-Light.ttf') format('truetype'), url('../fonts/TTDaysSans-Light.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DaysSansBold';
-    src: url('../fonts/TTDaysSans-Bold.eot');
-    src: local('../fonts/TTDaysSans-Bold.eot'), url('../fonts/TTDaysSans-Bold.woff') format('woff'), url('../fonts/TTDaysSans-Bold.ttf') format('truetype'), url('../fonts/TTDaysSans-Bold.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'DaysSansLight';
+  src: url("../fonts/TTDaysSans-Light.eot");
+  src: local("../fonts/TTDaysSans-Light.eot"), url("../fonts/TTDaysSans-Light.woff") format("woff"), url("../fonts/TTDaysSans-Light.ttf") format("truetype"), url("../fonts/TTDaysSans-Light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'DaysSansBlack';
-    src: url('../fonts/TTDaysSans-Black.eot');
-    src: local('../fonts/TTDaysSans-Black.eot'), url('../fonts/TTDaysSans-Black.woff') format('woff'), url('../fonts/TTDaysSans-Black.ttf') format('truetype'), url('../fonts/TTDaysSans-Black.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'DaysSansBold';
+  src: url("../fonts/TTDaysSans-Bold.eot");
+  src: local("../fonts/TTDaysSans-Bold.eot"), url("../fonts/TTDaysSans-Bold.woff") format("woff"), url("../fonts/TTDaysSans-Bold.ttf") format("truetype"), url("../fonts/TTDaysSans-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Days';
-    src: url('../fonts/days_regular.eot');
-    src: local('☺'), url('../fonts/days_regular.woff') format('woff'), url('../fonts/days_regular.ttf') format('truetype'), url('../fonts/days_regular.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'DaysSansBlack';
+  src: url("../fonts/TTDaysSans-Black.eot");
+  src: local("../fonts/TTDaysSans-Black.eot"), url("../fonts/TTDaysSans-Black.woff") format("woff"), url("../fonts/TTDaysSans-Black.ttf") format("truetype"), url("../fonts/TTDaysSans-Black.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-body {
-    font-family: 'DaysSans', sans-serif;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    text-align: center;
-    background-color: #efefef;
+@font-face {
+  font-family: 'Days';
+  src: url("../fonts/days_regular.eot");
+  src: local("☺"), url("../fonts/days_regular.woff") format("woff"), url("../fonts/days_regular.ttf") format("truetype"), url("../fonts/days_regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-div,
-p,
-input,
-button,
-form,
-span,
-a,
-ul,
-li,
-ol,
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, header, footer, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
 img {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0px;
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
 }
 
-.Partners h1 {
-    font-family: 'Days';
-    font-size: 48px;
+body .wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body .wrapper .header .Logo {
+  height: 140px;
+  background: url("../img/HeaderLogo.png") top center/430px 133px no-repeat;
+}
+
+body .wrapper .content {
+  padding: 30px;
+  background-color: #fff;
+}
+
+body .wrapper .content .BOTTLE_PROMO {
+  width: 100%;
+  height: 880px;
+  background: url("../img/Vector4.png") left/1858px 880px no-repeat;
+  margin: 0 0 45px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body .wrapper .content .BOTTLE_PROMO .promo-info {
+  width: 645px;
+  height: 645px;
+  background: url("../img/Bottle_promo_logo.png") top left/402px no-repeat;
+}
+
+body .wrapper .content .BOTTLE_PROMO .promo-info p {
+  font-size: 70px;
+  font-weight: 400;
+  font-family: "Days";
+  line-height: 75px;
+  color: #fff;
+  margin: 140px 0 0 0;
+}
+
+body .wrapper .content .BOTTLE_PROMO .promo-info p span {
+  font-family: "DaysSansLight";
+  font-weight: 100;
+  color: #FBDC32;
+}
+
+body .wrapper .content .BOTTLE_PROMO .promo-anim {
+  width: 405px;
+  height: 842px;
+  background: url("../img/kran.png") right center/405px 842px no-repeat;
+}
+
+body .wrapper .content .Partners {
+  font-size: 48px;
+  font-family: "Days";
+  color: #333739;
+  text-align: center;
+}
+
+body .wrapper .footer {
+  background-color: #c2b7f7;
 }
